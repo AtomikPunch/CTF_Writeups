@@ -1,3 +1,26 @@
+---
+title: "Neighbour - Web Application Enumeration"
+description: "A simple web application enumeration challenge involving source code analysis and lateral movement."
+date: "2024-01-25"
+difficulty: "Easy"
+tags:
+  - Web Security
+  - Source Code Analysis
+  - Enumeration
+  - Lateral Movement
+platform: "TryHackMe"
+tools:
+  - Browser DevTools
+  - Source Code Analysis
+  - Web Browser
+references:
+  - https://tryhackme.com/room/neighbour
+  - https://owasp.org/www-project-top-ten/2017/A2_2017-Broken_Authentication
+  - https://owasp.org/www-project-top-ten/2017/A5_2017-Broken_Access_Control
+slug: neighbour-web-app
+---
+
+
 # 🏠 Neighbour - Web Application Enumeration Write-up
 
 ## 🎯 Challenge Overview
