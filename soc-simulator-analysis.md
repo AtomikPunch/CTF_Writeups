@@ -1,4 +1,4 @@
-## **SOC Simulator - Write-up**
+# **SOC Simulator - Write-up**
 
 &nbsp;
 
