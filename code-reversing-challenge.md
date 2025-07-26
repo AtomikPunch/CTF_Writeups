@@ -1,19 +1,22 @@
 ---
-title: "SOC Simulator – Incident Analysis"
-description: "Investigation of suspicious emails…"
-date: "2025‑07‑21"
+title: "Code Reversing Challenge"
+description: "Analyzing a compiled binary to find the correct password using decompilation tools."
+date: "2025-07-21"
 difficulty: "Easy"
 tags:
-  - SOC
-  - Threat Detection
-platform: "TryHackMe"
+  - Reversing
+  - Binary Analysis
+  - Decompilation
+  - CTF
+platform: "Custom"
 tools:
-  - Splunk
-  - TryDetectThis
+  - Dogbolt.org
+  - Decompilers
+  - C Compiler
 references:
-  - https://owasp.org/www-project-email-security
-  - https://www.splunk.com/en_us/resources.html
-slug: soc-simulator-analysis
+  - https://dogbolt.org/
+  - https://en.wikipedia.org/wiki/Reverse_engineering
+slug: code-reversing-challenge
 ---
 
 # 🔍 Code Reversing Challenge - Write-up
