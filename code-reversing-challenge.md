@@ -13,6 +13,7 @@ tools:
 references:
   - https://owasp.org/www-project-email-security
   - https://www.splunk.com/en_us/resources.html
+slug: soc-simulator-analysis
 ---
 
 # 🔍 Code Reversing Challenge - Write-up
