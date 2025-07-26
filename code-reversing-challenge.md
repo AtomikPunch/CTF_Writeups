@@ -1,3 +1,20 @@
+---
+title: "SOC Simulator – Incident Analysis"
+description: "Investigation of suspicious emails…"
+date: "2025‑07‑21"
+difficulty: "Easy"
+tags:
+  - SOC
+  - Threat Detection
+platform: "TryHackMe"
+tools:
+  - Splunk
+  - TryDetectThis
+references:
+  - https://owasp.org/www-project-email-security
+  - https://www.splunk.com/en_us/resources.html
+---
+
 # 🔍 Code Reversing Challenge - Write-up
 
 ## 🎯 Challenge Overview²
