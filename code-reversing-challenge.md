@@ -1,3 +1,24 @@
+---
+title: "Code Reversing Challenge"
+description: "Analyzing a compiled binary to find the correct password using decompilation tools."
+date: "2025-07-21"
+difficulty: "Easy"
+tags:
+  - Reversing
+  - Binary Analysis
+  - Decompilation
+  - CTF
+platform: "Custom"
+tools:
+  - Dogbolt.org
+  - Decompilers
+  - C Compiler
+references:
+  - https://dogbolt.org/
+  - https://en.wikipedia.org/wiki/Reverse_engineering
+slug: code-reversing-challenge
+---
+
 # 🔍 Code Reversing Challenge - Write-up
 
 ## 🎯 Challenge Overview²
