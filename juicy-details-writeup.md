@@ -1,3 +1,28 @@
+---
+title: "Juicy Details Log Analysis"
+description: "Analyzing logs to trace attacker activities in the Juicy Details room on TryHackMe."
+date: "2025-07-27"
+difficulty: "Easy"
+tags:
+  - Log Analysis
+  - Forensics
+  - CTF
+  - Web Exploitation
+platform: "TryHackMe"
+tools:
+  - Nmap
+  - Hydra
+  - Sqlmap
+  - curl
+  - Feroxbuster
+references:
+  - https://tryhackme.com/room/juicydetails
+  - https://nmap.org/book/nse.html
+  - http://sqlmap.org
+slug: juicy-details-log-analysis
+---
+
+
 # 🕵️ Juicy Details – TryHackMe CTF Write-Up
 
 **Room:** [Juicy Details](https://tryhackme.com/room/juicydetails)  
