@@ -2,7 +2,7 @@
 title: "W1seGuy – TryHackMe Challenge"
 description: "Solving an XOR-based challenge by analyzing server-side Python code and performing a plaintext attack."
 date: "2025-08-04"
-difficulty: "medium"
+difficulty: "Medium"
 tags:
   - Reversing
   - XOR
