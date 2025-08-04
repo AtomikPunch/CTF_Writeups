@@ -35,7 +35,7 @@ The task involves analyzing several security incidents including suspicious emai
 
 &nbsp;  
 
-![Malicious URL]( /Capture/SOC-Simulator/SOC1.PNG )
+![Malicious URL](Capture/SOC-Simulator/SOC1.PNG )
 
 &nbsp;
 
