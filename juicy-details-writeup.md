@@ -1,5 +1,5 @@
 ---
-title: "Juicy Details Log Analysis"
+title: "Juicy Details"
 description: "Analyzing logs to trace attacker activities in the Juicy Details room on TryHackMe."
 date: "2025-07-27"
 difficulty: "Easy"

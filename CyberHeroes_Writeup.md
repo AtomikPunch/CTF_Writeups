@@ -1,5 +1,5 @@
 ---
-title: "CyberHeroes — TryHackMe Walkthrough"
+title: "CyberHeroes"
 description: "Client-side JavaScript analysis to uncover login credentials and retrieve the flag in this easy CTF challenge."
 date: "2025-08-04"
 difficulty: "Easy"

@@ -1,5 +1,5 @@
 ---
-title: "SOC Simulator – Incident Analysis"
+title: "SOC Simulator"
 description: "Investigation of suspicious emails…"
 date: "2025‑07‑21"
 difficulty: "Easy"
