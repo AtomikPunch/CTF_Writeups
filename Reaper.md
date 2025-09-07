@@ -1,18 +1,22 @@
 ---
-slug: "Reaper-forensics-challenge"
-title: "Reaper: Network Forensics and SIEM Alert Investigation"
+title: "HackTheBox - Reaper: Network Forensics and SIEM Alert Investigation"
 description: "Forensic analysis of a suspicious logon event involving IP/workstation mismatch, NTLM authentication attack, and credential theft using network capture and Windows event logs."
-date: "2025-09-07"
-readTime: "7 min"
+date: "2025‑09‑07"
+difficulty: "Medium"
 tags:
-  - HackTheBox
   - Forensics
   - SIEM
   - NTLM
   - Network Analysis
   - Windows Security
+platform: "HackTheBox"
+tools:
   - Wireshark
-featured: false
+  - python-evtx
+references:
+  - https://github.com/williballenthin/python-evtx
+  - https://docs.microsoft.com/en-us/windows/security/threat-protection/auditing/event-4624
+slug: hackthebox-reaper-forensics-challenge
 ---
 
 # HackTheBox - Reaper: Network Forensics and SIEM Alert Investigation

@@ -1,18 +1,23 @@
 ---
-slug: "noxious-llmnr-poisoning-attack"
-title: "Noxious: LLMNR Poisoning Attack Analysis"
+title: "HackTheBox - Noxious: LLMNR Poisoning Attack Analysis"
 description: "Forensic investigation of an LLMNR poisoning attack in Active Directory environment, analyzing credential relay, NTLM hash extraction, and password cracking techniques."
-date: "2025-09-07"
-readTime: "9 min"
+date: "2025‑09‑07"
+difficulty: "Hard"
 tags:
-  - HackTheBox
   - LLMNR Poisoning
   - Active Directory
   - NTLM Relay
   - Credential Harvesting
   - Network Security
-  - Hash Cracking
-featured: false
+platform: "HackTheBox"
+tools:
+  - Wireshark
+  - John the Ripper
+  - Kali Linux
+references:
+  - https://attack.mitre.org/techniques/T1557/001/
+  - https://www.blackhillsinfosec.com/how-to-disable-llmnr-why-you-want-to/
+slug: hackthebox-noxious-llmnr-poisoning-attack
 ---
 
 # HackTheBox - Noxious: LLMNR Poisoning Attack Analysis
