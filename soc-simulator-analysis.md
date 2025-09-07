@@ -1,7 +1,7 @@
 ---
 title: "SOC Simulator"
 description: "Investigation of suspicious emails…"
-date: "2025‑07‑21"
+date: "2025-07-21"
 difficulty: "Easy"
 tags:
   - SOC
