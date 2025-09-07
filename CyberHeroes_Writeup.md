@@ -25,62 +25,52 @@ This CTF is classified as **easy**. The primary objective is to retrieve the **u
 
 ---
 
-## Initial Reconnaissance
+## Overview
 
-Upon visiting the website, we are presented with a **login page**.
+This CTF challenge is classified as an easy-level room on TryHackMe. The main purpose of this challenge is to identify the correct username and password credentials that will grant access to the elite club of CyberHeroes. The challenge focuses on client-side authentication analysis and JavaScript code review.
 
-![Login Page](Capture/CyberHeroes/CH1.PNG)
+## Initial Analysis
 
-When incorrect credentials are entered, we receive a generic alert message.
+Upon accessing the target website, we are presented with a login page interface. When attempting to authenticate with incorrect credentials, the system displays a specific type of alert notification to the user.
 
-![Alert on Wrong Credentials](Capture/CyberHeroes/CH2.PNG)
+![Login Error Alert](Capture/CyberHeroes/CH1.png)
 
-To investigate how the login is handled, we open the **network tab** in the developer tools and attempt a login.
+## Network Traffic Investigation
 
-![Network Recording](Capture/CyberHeroes/CH3.PNG)
+To better understand the authentication mechanism, I examined the network traffic during the login attempt. The network recording reveals a crucial observation: there is no HTTP request made to any backend endpoint to verify the credentials against a database or external authentication service.
 
-Interestingly, we observe that **no network requests** are sent to any backend endpoint for authentication. This strongly indicates that the **credential validation is handled on the client side**, likely via JavaScript code.
+![Network Traffic Analysis](Capture/CyberHeroes/CH2.png)
 
----
+This finding suggests that the credential validation logic is implemented entirely on the client-side rather than through a server-side API call. This is a significant security vulnerability as it exposes the authentication mechanism to client-side analysis.
 
-## Code Analysis
+## Client-Side Code Analysis
 
-We examine the site’s JavaScript and identify a function named `authenticate()` that is triggered upon clicking the submit button.
+Further investigation of the client-side code reveals the presence of an `authenticate()` function that is executed when the submit button is clicked on the login form.
 
-![Authenticate Function Trigger](Capture/CyberHeroes/CH4.PNG)
+![Authentication Function Location](Capture/CyberHeroes/CH3.png)
 
-After locating the `authenticate()` function in the source code, we discover that:
+## Credential Discovery
 
-- Variable `a` (the username) is set to:  
-  ```
-  h3ck3rBoi
-  ```
+After locating the authenticate function in the JavaScript code, I was able to examine its implementation and extract the hardcoded credentials. The analysis reveals the following:
 
-- Variable `b` (the password) is set to the **reverse** of the string:  
-  ```
-  54321@terceSrepuS
-  ```
+- **Variable 'a' (Username):** `h3ck3rBoi`
+- **Variable 'b' (Password):** This value is stored as a reversed string `54321@terceSrepuS`, which when reversed becomes `SuperSecret@12345`
 
-Reversing this gives us the password:  
-```
-SuperSecret@12345
-```
+![Authenticate Function Code](Capture/CyberHeroes/CH4.png)
 
----
+## Solution and Flag Retrieval
 
-## Final Step — Login Success
-
-Using the discovered credentials:
-
-- **Username:** `h3ck3rBoi`  
+With the discovered credentials in hand, I proceeded to input them into the sign-in form:
+- **Username:** `h3ck3rBoi`
 - **Password:** `SuperSecret@12345`
 
-We successfully log in and retrieve the **flag**.
+Successfully authenticating with these credentials grants access to the system and reveals the flag.
 
-![Flag Retrieved](/Capture/CyberHeroes/CH5.PNG)
-
----
+![Successful Authentication and Flag](Capture/CyberHeroes/CH5.png)
 
 ## Conclusion
 
-This was a quick and straightforward challenge that emphasizes the importance of **not placing authentication logic in client-side code**. A great reminder for developers and an easy win for aspiring CyberHeroes.
+This challenge demonstrates a common security vulnerability where authentication logic is implemented on the client-side, making credentials easily discoverable through code analysis. The challenge was straightforward and quick to solve, serving as an excellent introduction to client-side security analysis techniques.
+
+
+The challenge reinforces the importance of implementing proper server-side authentication and never storing credentials in client-accessible code.

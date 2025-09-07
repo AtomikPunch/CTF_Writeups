@@ -1,5 +1,5 @@
 ---
-title: "HackTheBox - Noxious: LLMNR Poisoning Attack Analysis"
+title: "Noxious: LLMNR Poisoning Attack Analysis"
 description: "Forensic investigation of an LLMNR poisoning attack in Active Directory environment, analyzing credential relay, NTLM hash extraction, and password cracking techniques."
 date: "2025‑09‑07"
 difficulty: "Hard"
