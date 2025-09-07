@@ -1,7 +1,7 @@
 ---
 title: "Reaper"
 description: "Forensic analysis of a suspicious logon event involving IP/workstation mismatch, NTLM authentication attack, and credential theft using network capture and Windows event logs."
-date: "2025‑09‑07"
+date: "2025-09-07"
 difficulty: "Medium"
 tags:
   - Forensics

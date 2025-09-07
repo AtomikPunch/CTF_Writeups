@@ -1,7 +1,7 @@
 ---
 title: "Noxious"
 description: "Forensic investigation of an LLMNR poisoning attack in Active Directory environment, analyzing credential relay, NTLM hash extraction, and password cracking techniques."
-date: "2025‑09‑07"
+date: "2025-09-07"
 difficulty: "Hard"
 tags:
   - LLMNR Poisoning
