@@ -1,5 +1,5 @@
 ---
-title: "Crown Jewels
+title: "Crown Jewels"
 description: "Investigating a domain controller compromise where an attacker dumped the NTDS.dit database using volume shadow copy abuse."
 date: "2025-10-20"
 difficulty: "Medium"
