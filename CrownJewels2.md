@@ -66,7 +66,7 @@ We examined the `SYSTEM.evtx` file to identify Volume Shadow Copy Service activi
 
 **Identified Timestamp**: **2024-05-15 05:39:55**
 
-![TimeStamp](Capture/Crownjewels2/C1.PNG)
+![TimeStamp](Capture/CrownJewels2/C1.PNG)
 
 This timestamp became our temporal anchor point for correlating activities across all other event logs.
 
@@ -80,7 +80,7 @@ Upon examination of the application logs near the established timestamp, we succ
 
 **Dump Location**: `C:\Windows\Temp\dump_tmp\Active Directory\ntds.dit`
 
-![TimeStamp](Capture/Crownjewels2/C2.PNG)
+![TimeStamp](Capture/CrownJewels2/C2.PNG)
 
 ### Step 4: ESENT Database Events Analysis
 
@@ -99,8 +99,8 @@ During the NTDS dump process, the `ntdsutil.exe` executable enumerates specific 
 
 We analyzed the `SECURITY.evtx` file and identified the two security groups that were enumerated during the privilege validation process. These group enumeration events provided us with a critical piece of information: the **Session Opening ID**.
 
-![TimeStamp](Capture/Crownjewels2/C3.PNG)
-![TimeStamp](Capture/Crownjewels2/C4.PNG)
+![TimeStamp](Capture/CrownJewels2/C3.PNG)
+![TimeStamp](Capture/CrownJewels2/C4.PNG)
 
 ### Step 6: Tracking the Logon Session
 
@@ -118,7 +118,7 @@ We identified a sequence of Kerberos authentication events that revealed the com
    - Contained the same Subject Username as the previous event
    - Subsequent events in the chain contained the Logon ID we were tracking
 
-![TimeStamp](Capture/Crownjewels2/C5.PNG)
+![TimeStamp](Capture/CrownJewels2/C5.PNG)
 
 This sequence of events allowed us to reconstruct the complete authentication and authorization chain used by the attacker to gain access and execute the NTDS dump operation.
 

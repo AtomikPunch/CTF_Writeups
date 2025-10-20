@@ -60,7 +60,7 @@ To accomplish this, we searched for Event ID **7036**, which tracks when service
 
 Upon examination of the `SYSTEM.evtx` file, we discovered logs indicating that the Volume Shadow Copy Service transitioned to a **running** state. This event provided us with a crucial timestamp that established when the shadow copy was created.
 
-![running st](Capture/Crownjewels/C1.PNG)
+![running st](Capture/CrownJewels/C1.PNG)
 
 With this timestamp identified, we now had a temporal anchor point to correlate other suspicious activities across the remaining event logs.
 
@@ -72,8 +72,8 @@ With the VSS activation timestamp established, we proceeded to analyze the `SECU
 
 By filtering security events around the established timestamp, we were able to identify the specific account used by the threat actor and the group membership modifications that granted them elevated privileges within the domain.
 
-![running st](Capture/Crownjewels/C2.PNG)
-![running st](Capture/Crownjewels/C3.PNG)
+![running st](Capture/CrownJewels/C2.PNG)
+![running st](Capture/CrownJewels/C3.PNG)
 
 ### Step 3: Analyzing NTFS Event Logs
 
@@ -87,7 +87,7 @@ Using the Volume Shadow Copy timestamp as our reference point, we narrowed our i
 
 Within this refined dataset, we identified a specific log entry that clearly showed evidence of the shadow copy snapshot creation. This confirmed the attacker's use of VSS to create a snapshot of the system volume, likely for extracting the NTDS.dit database.
 
-![running st](Capture/Crownjewels/C4.PNG)
+![running st](Capture/CrownJewels/C4.PNG)
 
 ### Step 4: Master File Table (MFT) Analysis
 
@@ -106,7 +106,7 @@ Through the MFT analysis, we discovered:
 - The **creation timestamp** of the dumped database file
 - Evidence of related files in the same suspicious location
 
-![running st](Capture/Crownjewels/C5.PNG)
+![running st](Capture/CrownJewels/C5.PNG)
 
 ### Step 5: Identifying the SYSTEM Hive
 
